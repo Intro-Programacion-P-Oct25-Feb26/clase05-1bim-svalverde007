@@ -15,29 +15,31 @@ import java.util.Locale;
  *
  * @author reroes
  */
-public class Ejemplo1 {
+public class Ejemplo3 {
 
     public static void main(String[] args) {
         // Condicionales simplesmain
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-
-        double limiteNotas = 6.9;
+        
+        double limiteNotas;
+        System.out.printf("Ingrese el limite de notas");
+        limiteNotas = entrada.nextDouble();
         
         System.out.printf("Ingrese un valor para analizar");
         double promedio = entrada.nextDouble();
 
-        if (promedio >= 7.5) {
+        if (promedio >= limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio == 7.5) {
+        if (promedio == limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio < 7.5) {
+        if (promedio < limiteNotas) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
