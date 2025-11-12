@@ -24,7 +24,8 @@ public class Ejemplo5 {
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
 
-        if (!ciudad.equals("Loja")) {
+        if (!ciudad.equals("Loja")) { /* se esta comparando usando una cadena 
+                                        con el equals */
             System.out.printf("%s\n", "acceso correcto");
         } else {
             System.out.printf("%s\n", "acceso incorrecto");
@@ -32,7 +33,8 @@ public class Ejemplo5 {
 
         int numero = 10;
 
-        if (numero != 10) {
+        if (numero != 10) {  /* se esta una la comparacion "!" añadiendo el 
+                                igual para comparar los numeros*/
             System.out.println("correcto");
         }
 
