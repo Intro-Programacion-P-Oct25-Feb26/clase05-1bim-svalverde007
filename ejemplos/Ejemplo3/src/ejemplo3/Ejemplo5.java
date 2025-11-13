@@ -25,7 +25,7 @@ public class Ejemplo5 {
         // >= 3 and < 5 Recuperación
         // >=0 ande <3 Reprobado
         // cualquier nota, sera nota fuera de rango
-        
+
         double promedio = 2;
 
         if (promedio >= 7.5) {
@@ -39,17 +39,20 @@ public class Ejemplo5 {
                 if ((promedio >= 3) && (promedio < 5)) {
                     System.out.printf("Estudiante en recuperacion con un "
                             + "promedio: %.2f\n", promedio);
-            } else {
-                if ((promedio >=3) && (promedio < 5))
-                System.out.printf("Estudiante en suspenso con un "
-                        + "promedio: %.2f\n", promedio);
+                } else {
+                    if ((promedio >= 3) && (promedio < 5)) {
+                        System.out.printf("Estudiante en suspenso con un "
+                                + "promedio: %.2f\n", promedio);
+                    }
+                }
+                if ((promedio >= 0) && (promedio < 3)) {
+                    System.out.printf("La nota %.2f esta fuera de"
+                            + " rango", promedio);
+                } else {
+
+                }
             }
-            if ((promedio >= 0) && (promedio < 3)) {
-                System.out.printf("La nota %.2f esta fuera de"
-                        + " rango", promedio);
-            } else {
 
         }
     }
-
 }

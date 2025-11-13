@@ -26,7 +26,7 @@ public class Ejemplo7 {
         // >=0 ande <3 Reprobado
         // cualquier nota, sera nota fuera de rango
         // las notas no pueden pasar de 10.
-        double promedio = 10.1;
+        double promedio = 2;
 
         if ((promedio < 10)) {
             System.out.printf("La nota %.2f esta fuera de"
@@ -53,6 +53,13 @@ public class Ejemplo7 {
                         System.out.printf("La nota %.2f esta fuera de"
                                 + " rango", promedio);
                     } else {
+                         if (promedio < 0) {
+                            System.out.printf("La nota %.2f esta fuera de"
+                                + " rango y es positiva", promedio);
+                            } else {
+                            System.out.printf("La nota %.2f esta fuera de"
+                                + " rango y es positiva", promedio);
+                         }
 
                     }
 
